@@ -5,11 +5,17 @@ import random
 # Initialize Pygame
 pygame.init()
 
-# Load background music (replace with your music file path)
-background_music = "Purple Planet Music - Deep Mystical Lake (1_27) 120bpm.mp3"  # Update this with your actual music file
-if os.path.exists(background_music):
-    pygame.mixer.music.load(background_music)
-    pygame.mixer.music.play(-1, 0.0)  # Loop the music indefinitely
+# Initialize the mixer for sound
+pygame.mixer.init()
+
+# Load and play background music
+music_path = r"C:\Users\DELL\OneDrive\Flappy_Bird\FB.py\Purple Planet Music - Deep Mystical Lake (1_27) 120bpm.mp3" 
+if os.path.exists(music_path):
+    pygame.mixer.music.load(music_path)
+    pygame.mixer.music.play(-1)  # -1 makes it loop forever
+else:
+    print("Error: Background music file not found.")
+
 
 # Set up the game window
 WIDTH, HEIGHT = 400, 600
