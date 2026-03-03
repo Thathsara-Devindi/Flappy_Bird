@@ -1,7 +1,5 @@
 # 🐦 Flappy Bird Python Clone
-
-![Flappy Bird Cover](https://raw.githubusercontent.com/thathsara-devindi/Flappy_Bird/main/cover.png) 
-
+ 
 A polished 2D side-scroller game built using **Python** and **Pygame**. This project demonstrates core game development principles including physics simulation, collision detection, and real-time event handling.
 
 ---
